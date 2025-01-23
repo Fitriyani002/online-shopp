@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Penjualan Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Penjualan Online Shop</h1>
+        <form id="sale-form">
+            <label for="product-name">Nama Produk:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-price">Harga Produk (Rp):</label>
+            <input type="number" id="product-price" required>
+
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" required>
+
+            <button type="submit">Tambah Penjualan</button>
+        </form>
+
+        <h2>Daftar Penjualan</h2>
+        <ul id="sales-list">
+            <!-- Daftar penjualan akan muncul di sini -->
+        </ul>
+
+        <h3>Total Penjualan: Rp <span id="total-sales">0</span></h3>
+    </div>
+    <script src="script.js"></script>
+    <script src="test.js"></script> <!-- file untuk tes JavaScript -->
+</body>
+</html>
